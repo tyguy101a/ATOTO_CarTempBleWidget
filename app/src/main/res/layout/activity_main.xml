@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/od_navy"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="28dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0.12"
+        android:text="OUTSIDE TEMP"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tempText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="--°"
+        android:textColor="@color/white"
+        android:textSize="72sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/unitText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Display: Celsius"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <Switch
+        android:id="@+id/unitSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:minWidth="180dp"
+        android:text="Use Fahrenheit"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/washerStatusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Washer: -- · OFFLINE"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:gravity="center"
+        android:text="Scanner starts automatically"
+        android:textColor="@color/muted_text"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/backgroundStatusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Background scanner status"
+        android:textColor="@color/muted_text"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/startBackgroundButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Restart Background Scanner" />
+
+    <Button
+        android:id="@+id/rescanButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Rescan Now" />
+
+</LinearLayout>

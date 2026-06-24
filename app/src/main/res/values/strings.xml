@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Car Temp BLE</string>
+    <string name="widget_description">Small outside temperature widget</string>
+    <string name="washer_widget_description">Small washer fluid status widget</string>
+</resources>

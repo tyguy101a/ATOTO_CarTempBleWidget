@@ -1,0 +1,16 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.orbitaldelta.cartempble'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.orbitaldelta.cartempble'
+        minSdk 23
+        targetSdk 29
+        versionCode 10
+        versionName '1.0-temp-washer-atoto'
+    }
+}

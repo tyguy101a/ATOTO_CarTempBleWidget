@@ -10,8 +10,8 @@ The ESP32 broadcasts sensor data over BLE. The Android app reads the BLE adverti
 ## What this project includes
 
 - Android app package: `com.orbitaldelta.cartempble`
-- Temperature widget: visually unchanged from the original project
-- Washer fluid widget: separate second widget
+- Temperature widget
+- Washer fluid widget
 - ESP32 Arduino sketch in `esp32/CarTempBleSensor/CarTempBleSensor.ino`
 - ATOTO-specific keepalive handling for head units that aggressively kill background apps
 
@@ -45,7 +45,7 @@ W:L    = washer fluid low
 
 The Android app stores temperature in Celsius internally. The widget/app can display Fahrenheit.
 
-The parser also accepts older/longer formats such as:
+The parser also accepts longer formats such as:
 
 ```text
 TEMP:22.4C
@@ -71,7 +71,7 @@ DS18B20 GND   -> ESP32 GND
 DS18B20 DATA  -> ESP32 GPIO 4
 ```
 
-A DS18B20 normally needs a pull-up resistor between DATA and VCC. A common value is 4.7k ohm. Some breakout boards already include this resistor.
+A DS18B20 normally needs a pull-up resistor between DATA and VCC. A common value is 4.7k ohm. I used a breakout board which already included this resistor.
 
 ### Washer fluid sensor
 
